@@ -10897,6 +10897,11 @@ textarea.form-control-lg {
   position: relative;
 }
 
+.intro-section .col-md-6.intros.text-start {
+  z-index: 1;
+  padding-top: 2rem;
+}
+
 .intro-section svg {
   position: absolute;
   bottom: 0;
@@ -11230,6 +11235,56 @@ textarea.form-control-lg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#countdown-timer {
+  font-size: 1.4rem;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#countdown-timer div {
+  padding: 1rem 2rem 1rem 2rem;
+  font-weight: 700;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #countdown-timer div:first-child {
+  margin-left: 0;
+} */
+
+#countdown-timer div span {
+  background-color: #0A9596;
+  color: #fff;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#countdown-timer div:hover {
+  background: linear-gradient(to right, #0A9596, #2AB8B9);
+  color: #fff;
+}
+#countdown-timer div:hover span {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */
